@@ -1038,6 +1038,7 @@ Class.subclass( Page.Base, "Page.JobDetails", {
 	},
 	
 	start_live_log_watcher: function(job) {
+		console.log(config.custom_live_log_socket_url);
 		// open special websocket to target server for live log feed
 		var self = this;
 		var $cont = null;
